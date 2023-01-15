@@ -1,3 +1,6 @@
+import 'package:facebook_ui/constants/colors.dart';
+import 'package:facebook_ui/modules/login/form.dart';
+import 'package:facebook_ui/modules/login/header.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -14,8 +17,18 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: const Center(
-          child: Text("Hola"),
-        ));
+        home: Scaffold(
+            body: SingleChildScrollView(
+                padding: EdgeInsets.zero,
+                child: Column(
+                  children: [
+                    Container(
+                      padding: EdgeInsets.only(top: 24),
+                      color: FacebookColors.facebookBlue,
+                      child: HeaderLogin(),
+                    ),
+                    FormLogin()
+                  ],
+                ))));
   }
 }
