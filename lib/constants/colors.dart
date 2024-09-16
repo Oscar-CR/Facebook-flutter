@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 class FacebookColors {
-  // ignore: use_full_hex_values_for_flutter_colors
-  static const facebookBlue = Color(0xFFF2D4D88);
+  static const facebookBlue = Color(0xFF2D88F2); 
+  static const primaryColor = Color(0xFF0064E0); 
+  static const secondaryColor = Color(0xFF2D88F2); 
 }

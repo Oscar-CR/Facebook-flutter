@@ -22,13 +22,8 @@ class MyApp extends StatelessWidget {
                 padding: EdgeInsets.zero,
                 child: Column(
                   children: [
-                    Container(
-                      padding: EdgeInsets.only(top: 24),
-                      color: FacebookColors.facebookBlue,
-                      child: HeaderLogin(),
-                    ),
                     FormLogin()
-                  ],
+                    ],
                 ))));
   }
 }
